@@ -302,23 +302,10 @@ footer nav ul {
 	font-size: 16px;
 	font-family: 'Syne';
 	height: 37px;
+	padding: 0 10px;
 }
 
-.tous {
-	width: 100px;
-}
 
-.objets {
-	width: 100px;
-}
-
-.appartements {
-	width: 157px;
-}
-
-.hotel {
-	width: 198px;
-}
 
 .categories {
 	display: flex;
@@ -333,4 +320,62 @@ button {
 		background-color: #1D6154;
 		color: white;
 	}
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+	margin: 128px 0;
+
+	align-items: center;
+	justify-content: center;
+}
+
+input {
+	width: 379px;
+	height: 44px;
+}
+
+.connexion {
+	width: 179px;
+	height: 36px;
+	border-radius: 60px;
+	background-color: #1D6154;
+	color: white;
+	font-weight: 600;
+	font-size: 17px;
+	margin-top: 32px;
+}
+
+.log {
+
+	padding-bottom: 38px;
+}
+
+.email {
+	margin-bottom: -12px;
+	margin-left: -333px;
+	font-weight: 500;
+	font-weight: 600;
+
+}
+
+.mdp {
+	margin-bottom: -14px;
+	padding-top: 22px;
+	margin-left: -291px;
+	font-weight: 600;
+}
+
+.oublie {
+	font-size: 14px;
+	font-weight: 500;
+	padding-top: 22px;
+	text-decoration: underline;
+}
+
+
+a {
+	text-decoration: none;
+	color: black;
 }
