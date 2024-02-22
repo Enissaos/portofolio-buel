@@ -292,18 +292,6 @@ footer nav ul {
 }
 
 /*Catégorie*/
-.btn {
-	border: solid;
-	color: #1D6154;
-	border-width: 1px;
-	border-radius: 60px;
-	background-color: transparent;
-	font-weight: 700;
-	font-size: 16px;
-	font-family: 'Syne';
-	height: 37px;
-	padding: 0 10px;
-}
 
 
 
@@ -315,7 +303,22 @@ footer nav ul {
 	gap: 16px;
 }
 
-button {
+.log {
+	padding-bottom: 35px;
+}
+
+.btn-filtre {
+	border: solid;
+	color: #1D6154;
+	border-width: 1px;
+	border-radius: 60px;
+	background-color: transparent;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: 'Syne';
+	height: 37px;
+	padding: 0 10px;
+
 	&:hover {
 		background-color: #1D6154;
 		color: white;
@@ -326,6 +329,13 @@ button {
 	display: flex;
 	flex-direction: column;
 	margin: 128px 0;
+	align-items: center;
+	justify-content: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
 
 	align-items: center;
 	justify-content: center;
@@ -334,6 +344,12 @@ button {
 input {
 	width: 379px;
 	height: 44px;
+	border: 1px solid #ccc;
+	transition: border-color 0.3s ease;
+}
+
+input:focus {
+	border-color: red;
 }
 
 .connexion {
@@ -347,30 +363,43 @@ input {
 	margin-top: 32px;
 }
 
-.log {
 
-	padding-bottom: 38px;
+label[for="password"],
+label[for="email"] {
+	color: #3D3D3D;
+	font-family: Work Sans;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
 }
 
-.email {
-	margin-bottom: -12px;
-	margin-left: -333px;
-	font-weight: 500;
-	font-weight: 600;
+label[for="password"] {
+	margin-bottom: 6px;
+	margin-top: 30px;
+	margin-left: -292px;
 
 }
 
-.mdp {
-	margin-bottom: -14px;
-	padding-top: 22px;
-	margin-left: -291px;
-	font-weight: 600;
+label[for="email"] {
+	margin-bottom: 7px;
+	margin-left: -334px;
+}
+
+#password,
+#email {
+	width: 379px;
+	height: 51px;
+	flex-shrink: 0;
+	border: transparent;
+	background: #FFF;
+	box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.09);
 }
 
 .oublie {
 	font-size: 14px;
 	font-weight: 500;
-	padding-top: 22px;
+	padding-top: 5px;
 	text-decoration: underline;
 }
 

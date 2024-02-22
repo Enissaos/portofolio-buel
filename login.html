@@ -30,14 +30,23 @@
     <main>
         <section class="login">
             <h2 class="log">Log In</h2>
-            <p class="validate"></p>
-            <p class="erreur"></p>
-            <label for="email" class="email">E-mail</label><br>
-            <input type="email" id="email" name="email" required>
-            <label for="Mdp" class="mdp">Mot de passe</label><br>
-            <input type="password" id="password" name="password" required>
+            <form id="login-form" action="#" method="post">
+                <label for="email" class="container-login-label"> E-mail </label>
+                <input type="text" id="email" name="email" autocomplete="email">
 
-            <button class="connexion"> Se connecter </button>
+                <label for="password" class="container-login-label">
+                    Mot de passe
+                </label>
+                <input type="password" id="password" name="password" required autocomplete="current-password">
+
+                <input class="btn-filter" type="submit" id="submit-button" value="Se Connecter">
+
+            </form>
+
+            <p id="error-message" hidden>
+                Erreur dans l'identifiant ou le mot de passe
+            </p>
+
             <nav>
                 <ul>
                     <li class="oublie">Mot de passe oublié</li>
@@ -45,6 +54,8 @@
             </nav>
 
         </section>
+    </main>
+    </section>
     </main>
     <footer>
         <nav>
